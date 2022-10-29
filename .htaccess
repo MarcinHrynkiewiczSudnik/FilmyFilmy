@@ -1,0 +1,72 @@
+#    ___ ___ __  __ ___ ___ ___ ___    #
+#   / __| __|  \/  | _ \_ _| _ \ __|   #
+#   \__ \ _|| |\/| |  _/| ||   / _|    #
+#   |___/___|_|  |_|_| |___|_|_\___|   #
+#                                      #
+#         Htaccess Generator           #
+ 
+
+# Przekierowanie domeny
+
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{http://filmymarcin.cba.pl} [L,R=301]
+
+RewriteEngine On 
+RewriteCond %{HTTP_HOST} ^(www.)?filmymarcin.wex.pl [NC] 
+RewriteRule (.*) http://filmymarcin.cba.pl/$1 [R=301,L]
+
+<IfModule mod_headers.c>
+  Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Wyłacz listowanie katalogu
+Options All -Indexes
+
+RewriteEngine on
+
+# Cache po stronie przegladarki
+<FilesMatch ".(jpg|jpeg|png|gif|svg|css|js|webp|webm|mp4)$">
+Header set Cache-Control "max-age=2592000"
+</FilesMatch>
+
+ExpiresActive On
+
+# Zdjecia
+ExpiresByType image/jpg "access plus 1 week"
+ExpiresByType image/jpeg "access plus 1 week"
+ExpiresByType image/png "access plus 1 week"
+ExpiresByType image/gif "access plus 1 week"
+ExpiresByType image/webp "access 1 week"
+ExpiresByType image/ico "access plus 1 week"
+
+# Kompresja 
+
+<IfModule mod_deflate.c>
+SetOutputFilter DEFLATE
+
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch \bMSIE\s(7|8) !no-gzip !gzip-only-text/html
+
+SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|ico)$ no-gzip dont-vary
+
+AddOutputFilterByType DEFLATE text/plain # Kompresja
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/json
+AddOutputFilterByType DEFLATE image/svg+xml
+
+</IfModule>
+
+
+
+
+

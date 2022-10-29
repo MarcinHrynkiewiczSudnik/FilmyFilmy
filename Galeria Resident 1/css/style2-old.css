@@ -1,0 +1,560 @@
+@charset "utf-8";
+/* CSS Document */
+	*
+			{
+				padding: 0;
+				margin: 0;
+				border: 0px;
+			}
+			body
+			{
+				background-image: none;
+				
+			}	
+
+#main{
+	background:#1B0DCD;
+	width: 1100px;
+	height: 800px;
+	position: relative;
+	padding-top:50px;
+	padding-left: 230px;
+}
+
+#content{
+	width:734px;
+	height:1000px;
+	margin:0px auto;
+	border-radius:3px;
+}
+
+#gallery_img{
+	width:734px;
+	height:500px;
+	float:right;
+	position:relative;
+}
+
+#lefty{
+	width:23px;
+	position:absolute;
+	top:235px;
+	left:10px;
+}
+
+#righty{
+	width:23px;
+	position:absolute;
+	top:235px;
+	right:10px;
+}
+
+#play, #pause{
+	width:12px;
+	position:absolute;
+	top:239px;
+	right:40px;
+}
+
+#play{
+	display:none;
+}
+
+#expand{
+	width:18px;
+	position:absolute;
+	top:478px;
+	right:6px;
+}
+
+#thumbs{
+	height:100px;
+	width:734px;
+	float:left;
+	overflow:auto;
+	margin-top:10px;
+	white-space:nowrap;
+}
+
+.thumbs_style{
+	display:inline-block;
+}
+
+.thumbs_style img{
+	width:110px;
+	height:75px;
+	border-radius:4px;
+	border:3px solid rgba(0,0,0,0.4);
+}
+
+.gallery_img_style{
+	width:734px;
+	height:500px;
+	border-radius:25px;
+	position:absolute;
+}
+
+			footer
+{
+    
+	color:aliceblue;
+	background-color: black;
+	justify-content: center;
+   text-align: center;
+	width:1400px;
+	height:30px;
+	margin:0 auto;
+	font-size: 14px;
+				font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+				padding-top: 10px;
+				
+}
+			
+			#kontener
+			{
+				width: 1400px;
+				min-height: 800px;
+				display: flex;
+				
+				background-color: #1B0DCD;
+				margin: 0 auto;
+				
+			}
+	#kontener_menu
+			{
+				width: 1400px;
+				min-height: 708px;
+				display: flex;
+				
+				background-color: #1B0DCD;
+				margin: 0 auto;
+				
+			}
+
+			
+			h1
+			{
+				color: aliceblue;
+				font-family: "Trebuchet MS", verdena, sans-serif, arial, georgia;
+				text-align: center;
+				font-weight: bold;
+				font-size: 33px;
+				padding-top: 10px;
+				padding-bottom:  50px;	
+				letter-spacing: 10px;
+				
+			}
+			
+			h2
+			{
+				color: aliceblue;
+				font-family: "Trebuchet MS", verdena, sans-serif, arial, georgia;
+				text-align: left;
+				font-weight: bold;
+				font-size: 33px;
+				padding-top: 10px;
+				padding-bottom:  50px;	
+				margin-left: 60px;
+				letter-spacing:10px;
+				
+			}
+
+			p
+			{
+				color:aliceblue;
+				font-size: 22px;
+				text-align: justify;
+				font-family: "Trebuchet MS", verdena, sans-serif, arial, georgia;
+				padding: 7px;
+				line-height: 140%;
+				
+				
+				}
+		#tresc
+			{
+				width: 950px;
+				min-height: 100px;
+				flex:6;
+				position:relative;
+				float:right;
+				margin-left: 300px;
+				margin-right: 120px;
+				margin-top: 20px;
+				text-align: center;
+			}
+
+	#tresc_strona_glowna
+			{
+				width: 950px;
+				min-height: 100px;
+				flex:6;
+				position:relative;
+				float:right;
+				margin-left: 300px;
+				margin-right: 120px;
+				margin-top: 100px;
+				text-align: center;
+			}
+
+#baner
+{display:flex}
+
+
+#baner img
+{
+	margin: 0 auto;
+	width: 1400px;
+	height: 150px;
+	
+}
+	
+		#menu
+			{
+				width: 280px;
+				position:absolute;
+				flex:1;
+				float: left;
+				text-align: center;
+				margin-top: 280px;
+				padding: 5px 0px;
+				
+			}			
+			
+#menu_strona_glowna
+			{
+				width: 280px;
+				position:absolute;
+				float: left;
+				text-align: center;
+				margin-top: 150px;
+				padding: 5px 0px;
+				
+				
+			}
+
+
+		a
+			{
+				font-family: "Trebuchet MS", verdena, sans-serif, arial, georgia;
+				color:white;
+				font-size: 30px;
+				text-decoration: none;
+				padding: 15px;
+				
+				display:block;
+				
+				
+				
+			}
+			
+		a:hover
+			{
+				color:black;
+				font-weight: bold;
+				font-size: 31px;
+				
+				
+			}
+			
+		
+		li
+			{
+				list-style-type: none;
+			}
+
+
+
+	.podpis
+	{
+		color:aliceblue;
+		font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+		font-style: italic;
+		font-size: 20px;
+		
+
+	}
+
+
+.odstep
+{
+	color: #1B0DCD;
+}
+	
+
+
+
+
+	#obsada
+{
+	color: aliceblue;
+	text-size:14px;
+	
+}
+
+	#obsada li
+{ 	color:aliceblue;
+	font-size: 20px;
+	text-align: left;
+	font-family: "Trebuchet MS", verdena, sans-serif, arial, georgia;
+	padding: 2px;
+	line-height: 140%;
+	text-indent: 20px;
+	
+}
+
+	#obsada li a
+{ 	color:aliceblue;
+	font-size: 20px;
+	text-align: left;
+	font-family: "Trebuchet MS", verdena, sans-serif, arial, georgia;
+	padding: 2px;
+	line-height: 140%;
+	text-indent: 20px;
+	display: inline;
+}
+
+	#obsada li a:hover
+			{
+				color: #E30E12;
+				font-weight: bold;
+				font-size: 21px;
+			}
+
+#pierwsza_kolumna
+{
+	width: 300px;
+	position: absolute;
+	float: left;
+}
+
+#druga_kolumna
+{
+	width: 595px;
+	float:right;
+	position: relative;
+	text-align: left;
+}
+#bloczek
+{
+	display:inline;
+	
+}
+
+#opis p
+{
+	color:aliceblue;
+	font-size: 19px;
+	
+	text-align: justify;
+	font-family: "Trebuchet MS", verdena, sans-serif, arial, georgia;
+	padding: 2px;
+	line-height: 140%;
+	margin-bottom: 15px;
+	
+	
+}
+
+#opis p:first-letter
+{
+	color:aliceblue;
+	font-size: 25px;
+	font-weight: bold;
+	padding-left: 40px;
+}
+#opis p a
+{
+	color:aliceblue;
+	font-size: 20px;
+	text-align: left;
+	font-family: "Trebuchet MS", verdena, sans-serif, arial, georgia;
+	padding: 0px;
+	line-height: 140%;
+	text-indent: 20px;
+	display: inline;
+	
+}
+
+#opis p a:hover
+			{
+				color: #E30E12;
+				font-weight: bold;
+				font-size: 21px;
+			}
+/* OBRAZKI DO STRONY AKTORKI */
+
+.opakowanie_obrazka 
+{
+    height: 320px;
+	width: 280px;
+	
+	text-align: center;
+	margin-right: 35px;
+	margin-left: 35px;
+	margin-bottom: 30px;
+	float:left;
+}
+
+.opakowanie_obrazka img:hover
+
+{
+	transform: scale(1.1);
+	cursor:pointer;
+}
+
+
+#tresc .blok_obrazkow p
+{
+text-align: center;
+margin-top: -20px;
+}
+
+#tresc .blok_obrazkow
+{
+	margin-left: 130px;
+	margin-right: 100px;
+	
+}
+
+#tresc .blok_obrazkow .opakowanie_obrazka a img
+{
+	height: 250px;
+	width: auto;
+	padding: 15px 10px;
+}
+
+/* OBRAZKI DO STRONY AKTORZY */
+
+#tresc .blok_obrazkow .opakowanie_obrazka_single a img
+{
+	height: 250px;
+	width: auto;
+	padding: 15px 10px;
+	
+}
+
+.opakowanie_obrazka_single
+{
+    height: 320px;
+	width: 600px;
+	
+	text-align: center;
+	margin-right: 35px;
+	margin-left: 35px;
+	margin-bottom: 30px;
+	
+}
+
+/* OBRAZKI DO STRONY FILMY */
+
+.opakowanie_obrazka_filmy 
+{
+    height: 320px;
+	width: 240px;
+	
+	text-align: center;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 30px;
+	float:left;
+}
+
+.opakowanie_obrazka_filmy img:hover
+
+{
+	transform: scale(1.1);
+	cursor:pointer;
+}
+
+#tresc .blok_obrazkow_filmy p
+{
+text-align: center;
+margin-top: -20px;
+}
+
+#tresc .blok_obrazkow_filmy
+{
+	margin-left: 100px;
+	margin-right: 100px;
+	
+}
+
+#tresc .blok_obrazkow_filmy .opakowanie_obrazka_filmy a img
+{
+	height: 250px;
+	width: auto;
+	padding: 15px 10px;
+}
+
+/* STRONA OPIS FILMU */
+
+.obrazki_opis img
+{
+	height: 350px;
+	width: auto;
+	padding: 15px 10px;
+}
+
+/* STRONA GALERIA FILMU */
+
+.opakowanie_obrazka_galeria
+{
+    height: 240px;
+	width: 300px;
+	
+	text-align: center;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	float:left;
+}
+
+
+
+#tresc .blok_obrazkow_galeria
+{
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	
+}
+
+#tresc .blok_obrazkow_galeria .opakowanie_obrazka_galeria img
+{
+	
+	width: 250px;
+	height: auto;
+	padding: 0;
+}
+
+.opakowanie_obrazka_galeria img
+{
+	border-radius: 10px;
+}
+
+
+
+.myButton {
+	box-shadow: 0px 0px 0px -50px #9fb4f2;
+	background:linear-gradient(to bottom, #598de6 5%, #476e9e 100%);
+	background-color:#598de6;
+	border-radius:20px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: "Trebuchet MS", verdena, sans-serif, arial, georgia;
+	font-size:25px;
+	font-weight:bold;
+	padding:10px 14px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #254bad;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #598de6 100%);
+	background-color:#476e9e;
+}
+.myButton:active {
+	position:relative;
+		top:1px;
+}
+			

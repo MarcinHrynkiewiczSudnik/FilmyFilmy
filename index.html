@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K6CKM9P');</script>
+<!-- End Google Tag Manager -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="apple-mobile-web-app-title" content="Moje ulubione filmy">
+<meta name="application-name" content="Moje ulubione filmy">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+
+
+<link rel="manifest" href="manifest.json">
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<meta name="msapplication-starturl" content="/index.html">
+
+
+    <meta name="title" content="Moje ulubione filmy">
+
+    <meta name="Description" CONTENT="Author: Marcin Hrynkiewicz, Category: Film, Filmy, Movies, Description: Strona poświęcona moim ulubionym filmom (The Recruit, S.W.A.T., Resident Evil, Resident Evil: Apocalypse, The Bourne Identity, The Bourne Supremacy)">
+
+    <meta name="keywords" content="ulubione, filmy, movies, marcin, hrynkiewicz, polska, gdańsk, Recruit, S.W.A.T., Resident Evil, Rsident Evil: Apocalypse, Bourne Identity, Bourne Supremacy">
+
+    <meta name="robots" content="index, follow">
+
+    <title>Moje ulubione filmy</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" async>
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="canonical" href="https://filmymarcin.cba.pl/index.html">
+
+    <meta name="google-site-verification" content="ujbnKZtMHyoskwceEoxM8V5M3XNugzvcGOOqpYD18EU">
+</head>
+
+<body onload="startApp();">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6CKM9P"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="container-lg mx-auto">
+
+        <div class="row bg-dark">
+            <div class="col">
+                <img src="Obrazki/baner.jpg" class="img-fluid" alt="Baner" />
+            </div>
+        </div>
+        <div class="row align-items-center tlo">
+            <div class="col-md-3 text-center">
+                <ul>
+
+ <li>
+                        <a href="mapa.html" target="_self" class="test"><img class="globus" src="Obrazki/globus.webp" alt="globus" title="Mapa okolicy"/></a>
+                    </li>
+                    <li>
+                        <a href="filmy2.html" target="_self" class="test"><img src="Obrazki/klaps.webp" alt="klaps" /> Filmy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="aktorki3.html" target="_self" class="test"><img src="Obrazki/kobieta.webp" alt="kobieta" /> Aktorki</a>
+                    </li>
+                    <li>
+                        <a href="aktorzy2.html" target="_self" class="test"><img src="Obrazki/mezczyzna.webp" alt="mezczyzna" /> Aktorzy</a>
+                    </li>
+                   
+ <li>
+                        <a href="wisnia.html" target="_self" class="test"><img class="globus" src="Obrazki/sluchawki.webp" alt="sluchawki" title="Muzyka"/></a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-md-8 text-justify tlo margines">
+                <h1>Witam na stronie poświęconej moim ulubionym filmom</h1>
+
+                <p>Stronę tą utworzyłem, aby podzielić się z innymi moim hobby, jakim są filmy.</p>
+                <p>Można tutaj znaleźć informacje o sześciu obrazach, które są według mnie najlepsze, oraz dowiedzieć się czegoś o aktorach w nich występujących. </p>
+                <p>Serdecznie zapraszam do korzystania z tego serwisu,</p>
+                <p><i>Marcin Hrynkiewicz</i></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center bg-dark text-white stopka">&copy; 2020-2021, created by Marcin Hrynkiewicz
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center bg-dark text-white stopka2">
+                <span id="pogoda"></span><br>
+                <span id="dzien_tyg"></span>
+                <span id="waluta"></span>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <script async src="https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+
+    <script async src="js/code.js"></script>
+
+</body>
+
+</html>	

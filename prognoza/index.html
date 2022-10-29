@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Prognoza pogody</title>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+  <style>
+    #locationLink {
+      font-size: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      color: darkorange;
+    }
+
+    .table {
+      margin: auto;
+      width: 45% !important;
+    }
+
+    @media screen and (max-width: 1050px) {
+      .table {
+        width: 100% !important;
+      }
+      .table_2 {
+        width: 100% !important;
+      }
+      .table_3 {
+        width: 100% !important;
+      }
+    }
+
+    .table_2 {
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .table_3 {
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .wiersz tr:hover td {
+      background-color: darkgoldenrod;
+    }
+  </style>
+
+
+</head>
+<body onload="startApp();">
+<div class="container-fluid m-auto">
+  <table class="table mx-auto table-responsive table_2">
+    <tbody>
+    <tr class="table-warning">
+      <td class="align-middle">
+        <a href="#" id="locationLink"></a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <table class="table mx-auto table-responsive table-hover">
+    <tbody>
+    <tr class="table-success">
+      <td class="align-middle">
+        Strefa: <span id="zone"></span><br>
+        Wschód słońca: <span id="sunRise"></span><br>
+        Zachód słońca: <span id="sunSet"></span>
+      </td>
+
+      <td class="align-middle">
+        <img src="" id="currentWeatherImg" alt="currentWeatherImg"><br>
+        <span id="pogodaOpis"></span>
+       </td>
+
+      <td class="align-middle">
+        <img src="" id="currentWeatherImg2" alt="currentWeatherImg"><br>
+        <span id="pogodaOpis2"></span>
+      </td>
+
+      <td class="align-middle">
+        <img src="" id="currentWeatherImg3" alt="currentWeatherImg"><br>
+        <span id="pogodaOpis3"></span>
+      </td>
+      <td class="align-middle">
+        <img src="" id="currentWeatherImg4" alt="currentWeatherImg"><br>
+        <span id="pogodaOpis4"></span>
+      </td>
+    </tr>
+
+
+
+    <tr class="table-info">
+      <td class="align-middle">
+        Godzina:
+      </td>
+      <td class="align-middle">
+        <span id="godz"></span> <span id="locgodz"></span>
+      </td>
+      <td class="align-middle">
+        <span id="godz2"></span> <span id="locgodz2"></span>
+      </td>
+      <td class="align-middle">
+        <span id="godz3"></span> <span id="locgodz3"></span>
+      </td>
+      <td class="align-middle">
+        <span id="godz4"></span> <span id="locgodz4"></span>
+      </td>
+    </tr>
+
+    <tr class="table-info">
+      <td class="align-middle">
+        Temperatura:
+      </td>
+      <td class="align-middle">
+        <span id="temp"></span>
+      </td>
+      <td class="align-middle">
+        <span id="temp2"></span>
+      </td>
+      <td class="align-middle">
+        <span id="temp3"></span>
+      </td>
+      <td class="align-middle">
+        <span id="temp4"></span>
+      </td>
+    </tr>
+
+    <tr class="table-info">
+      <td class="align-middle">
+        Temperatura odczuwalna:
+      </td>
+      <td class="align-middle">
+        <span id="tempOdcz"></span>
+      </td>
+      <td class="align-middle">
+        <span id="tempOdcz2"></span>
+      </td>
+      <td class="align-middle">
+        <span id="tempOdcz3"></span>
+      </td>
+      <td class="align-middle">
+        <span id="tempOdcz4"></span>
+      </td>
+    </tr>
+
+    <tr class="table-info">
+      <td class="align-middle">
+        Wilgotność:
+      </td>
+      <td class="align-middle">
+        <span id="humidity"></span>
+      </td>
+      <td class="align-middle">
+        <span id="humidity2"></span>
+      </td>
+      <td class="align-middle">
+        <span id="humidity3"></span>
+      </td>
+      <td class="align-middle">
+        <span id="humidity4"></span>
+      </td>
+    </tr>
+
+    <tr class="table-info">
+      <td class="align-middle">
+        Ciśnienie (poziom morza):
+      </td>
+      <td class="align-middle">
+        <span id="pressure_mo"></span>
+      </td>
+
+      <td class="align-middle">
+        <span id="pressure2_mo"></span>
+      </td>
+
+      <td class="align-middle">
+        <span id="pressure3_mo"></span>
+      </td>
+      <td class="align-middle">
+        <span id="pressure4_mo"></span>
+      </td>
+    </tr>
+
+    <tr class="table-info">
+      <td class="align-middle">
+        Ciśnienie (poziom gruntu):
+      </td>
+      <td class="align-middle">
+        <span id="pressure_gr"></span>
+      </td>
+
+      <td class="align-middle">
+        <span id="pressure2_gr"></span>
+      </td>
+
+      <td class="align-middle">
+        <span id="pressure3_gr"></span>
+      </td>
+      <td class="align-middle">
+        <span id="pressure4_gr"></span>
+      </td>
+    </tr>
+
+    <tr class="table-info">
+      <td class="align-middle">
+        Zachmurzenie:
+      </td>
+      <td class="align-middle">
+        <span id="cloudsPerc"></span>
+      </td>
+      <td class="align-middle">
+        <span id="cloudsPerc2"></span>
+      </td>
+      <td class="align-middle">
+        <span id="cloudsPerc3"></span>
+      </td>
+      <td class="align-middle">
+        <span id="cloudsPerc4"></span>
+      </td>
+    </tr>
+
+    <tr class="table-info">
+      <td class="align-middle">
+        Prawdopodobieństwo opadów:
+      </td>
+      <td class="align-middle">
+        <span id="pop"></span>
+      </td>
+      <td class="align-middle">
+        <span id="pop2"></span>
+      </td>
+      <td class="align-middle">
+        <span id="pop3"></span>
+      </td>
+      <td class="align-middle">
+        <span id="pop4"></span>
+      </td>
+    </tr>
+
+    <tr class="table-info">
+      <td class="align-middle">
+        Prędkość wiatru:
+      </td>
+      <td class="align-middle">
+        <span id="windSpeed"></span>
+      </td>
+      <td class="align-middle">
+        <span id="windSpeed2"></span>
+      </td>
+      <td class="align-middle">
+        <span id="windSpeed3"></span>
+      </td>
+      <td class="align-middle">
+        <span id="windSpeed4"></span>
+      </td>
+    </tr>
+
+    <tr class="table-info">
+      <td class="align-middle">
+        Kierunek wiatru:
+      </td>
+      <td class="align-middle">
+        <span id="windDir"></span>
+      </td>
+      <td class="align-middle">
+        <span id="windDir2"></span>
+      </td>
+      <td class="align-middle">
+        <span id="windDir3"></span>
+      </td>
+      <td class="align-middle">
+        <span id="windDir4"></span>
+      </td>
+    </tr>
+
+
+
+
+    </tbody>
+  </table>
+
+
+
+  <table class="table mx-auto table-responsive table_3">
+    <tbody>
+    <tr class="table-warning">
+      <td class="align-middle">
+        <button id="aktualna">Obecna pozycja</button>
+      </td>
+      <td class="align-middle">
+        <button id="dom">Dom</button>
+      </td>
+      <td class="align-middle">
+        <button id="praca">Praca</button>
+      </td>
+      <td class="align-middle">
+        <button id="ania">Rumia</button>
+      </td>
+    </tr>
+
+    <tr class="table-warning">
+
+      <td class="align-middle">
+        <button id="ola">Słubice</button>
+      </td>
+      <td class="align-middle">
+        <button id="domek">Sulęczyno</button>
+      </td>
+      <td class="align-middle">
+        <button id="wawa">Warszawa</button>
+      </td>
+      <td class="align-middle">
+        <button id="krak">Kraków</button>
+      </td>
+    </tr>
+
+    <tr class="table-warning">
+
+      <td class="align-middle">
+        <button id="gdsm">Gd. Stare Miasto</button>
+      </td>
+      <td class="align-middle">
+        <button id="sop">Sopot</button>
+      </td>
+      <td class="align-middle">
+        <button id="gdy">Gdynia</button>
+      </td>
+      <td class="align-middle">
+        <button id="karp">Karpacz</button>
+      </td>
+
+    </tr>
+
+    <tr class="table-warning">
+
+      <td class="align-middle">
+        <button id="nyc">Nowy York</button>
+      </td>
+      <td class="align-middle">
+        <button id="kopen">Kopenhaga</button>
+      </td>
+      <td class="align-middle">
+        <button id="rom">Rzym</button>
+      </td>
+      <td class="align-middle">
+        <button id="ali">Alicante</button>
+      </td>
+    </tr>
+
+    <tr class="table-warning">
+      <td class="align-middle">
+        <button id="par">Paryż</button>
+      </td>
+      <td class="align-middle">
+        <button id="kai">Giza</button>
+      </td>
+      <td class="align-middle">
+        <button id="kor">Korfu</button>
+      </td>
+      <td class="align-middle">
+        <button id="tok">Tokio</button>
+      </td>
+    </tr>
+    </tbody>
+
+</table>
+
+  <table class="table mx-auto table-responsive table_2">
+    <tbody>
+    <tr class="table-warning">
+      <td class="align-middle">
+        <span id="podpis">Created by Marcin Hrynkiewicz, 2022</span>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<script src="code.js"></script>
+
+</body>
+</html>

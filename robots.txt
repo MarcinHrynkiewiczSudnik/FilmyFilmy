@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://filmymarcin.cba.pl/SiteMap/sitemap.xml

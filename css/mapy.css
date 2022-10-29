@@ -1,0 +1,77 @@
+#myMap {
+    position: relative;
+    width: 1200px;
+    height: 800px;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    #myMap {
+
+        width: 1000px;
+        height: 660px;
+    }
+}
+
+
+@media screen and (max-height: 800px) {
+    #myMap {
+
+        width: 700px;
+        height: 460px;
+    }
+}
+
+.myButton {
+    box-shadow: 0px 0px 0px -50px #9fb4f2;
+    background: linear-gradient(to bottom, #598de6 5%, #476e9e 100%);
+    background-color: #598de6;
+    border-radius: 20px;
+    border: 1px solid #4e6096;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: "Trebuchet MS", verdena, sans-serif, arial, georgia;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 14px;
+    text-decoration: none;
+    text-shadow: 0px 0px 0px #254bad;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    .myButton {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .myButton {
+        font-size: 18px;
+    }
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #476e9e 10%, #598de6 100%);
+    background-color: #476e9e;
+    border-color: lightsteelblue;
+    border-style: double;
+    font-size: 30px;
+    color: rgb(230, 165, 26);
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    .myButton:hover {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .myButton:hover {
+        font-size: 20px;
+    }
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}

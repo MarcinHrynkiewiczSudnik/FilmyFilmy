@@ -1,0 +1,944 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0px;
+}
+
+body {
+    background-image: none;
+}
+
+
+
+.box1 {
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.szerokosc {
+    width: auto;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    .szerokosc {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .szerokosc {
+        width: 80%;
+    }
+}
+
+.szerokosc1 {
+    width: auto;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    .szerokosc1 {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .szerokosc1 {
+        width: 95%;
+    }
+}
+
+
+.szerokosc2{
+width:70%;
+}
+
+
+
+
+
+
+.test {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.test:hover {
+    color: rgb(230, 165, 26);
+    font-weight: bold;
+    font-size: 30px;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    .test:hover {
+        font-size: 24px;
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .test:hover {
+        font-size: 24px;
+        transform: scale(1.1);
+    }
+}
+
+.margines {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    .margines {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .margines {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+}
+
+.stopka {
+    height: 34px;
+    padding-top: 5px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.stopka2 {
+    height: auto;
+    padding: 0;
+}
+
+.footer {
+    height: 30px;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    .footer {
+        height: 15px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .footer {
+        height: 15px;
+    }
+}
+
+.tlo {
+    background-color: #1B0DCD;
+}
+
+.obrazek_aktorki {
+    height: 250px;
+    width: auto;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    .obrazek_aktorki {
+        height: 190px;
+        width: auto;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .obrazek_aktorki {
+        height: 190px;
+        width: auto;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .obrazek_aktorki {
+        height: 250px;
+        width: auto;
+        border-radius: 15px;
+    }
+}
+
+.opakowanie_obrazka {
+    height: 300px;
+    width: 260px;
+    text-align: center;
+    margin-right: 35px;
+    margin-left: 35px;
+    margin-bottom: 25px;
+    float: left;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    .opakowanie_obrazka {
+        height: 260px;
+        width: 200px;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .opakowanie_obrazka {
+        height: 260px;
+        width: 200px;
+        margin-right: 0px;
+        margin-left: 100px;
+        margin-bottom: 0px;
+    }
+}
+
+.margines_aktorki {
+    margin-right: 0px;
+}
+
+.podpis_obrazki {
+    line-height: 1.15;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    .podpis_obrazki {
+        line-height: 1.11;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .podpis_obrazki {
+        line-height: 1.11;
+        font-size: 16px;
+    }
+}
+
+.pad {
+    padding-bottom: 30px;
+}
+
+#menu {
+    width: 280px;
+    position: absolute;
+    flex: 1;
+    float: left;
+    text-align: center;
+    margin-top: 280px;
+    padding: 5px 0px;
+    margin-left: 40px;
+}
+
+h1 {
+    color: aliceblue;
+    font-family: "Trebuchet MS", verdena, sans-serif, arial, georgia;
+    text-align: center;
+    font-weight: bold;
+    font-size: 33px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    h1 {
+        font-size: 28px;
+        padding-top: 10px;
+        padding-bottom: 35px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    h1 {
+        font-size: 28px;
+        padding-top: 10px;
+        padding-bottom: 35px;
+    }
+}
+
+h2 {
+    color: aliceblue;
+    font-family: "Trebuchet MS", verdena, sans-serif, arial, georgia;
+    text-align: left;
+    font-weight: bold;
+    font-size: 46px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin-left: 60px;
+    letter-spacing: 10px;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    h2 {
+        font-size: 34px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        margin-left: 60px;
+        letter-spacing: 7px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    h2 {
+        font-size: 34px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        margin-left: 60px;
+        letter-spacing: 7px;
+    }
+}
+
+p {
+    color: aliceblue;
+    font-size: 22px;
+    text-align: justify;
+    font-family: "Trebuchet MS", verdena, sans-serif, arial, georgia;
+    padding: 7px;
+    line-height: 140%;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    p {
+        font-size: 19px;
+        padding: 5px;
+        line-height: 120%;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    p {
+        font-size: 19px;
+        padding: 5px;
+        line-height: 120%;
+    }
+}
+
+#obsada h3 {
+    color: aliceblue;
+    font-size: 22px;
+    text-align: left;
+    font-family: "Trebuchet MS", verdena, sans-serif, arial, georgia;
+    padding: 7px;
+    line-height: 140%;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    #obsada h3 {
+        font-size: 19px;
+        padding-bottom: 0px;
+        line-height: 120%;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    #obsada h3 {
+        font-size: 19px;
+        padding-bottom: 0px;
+        line-height: 120%;
+    }
+}
+
+a {
+    font-family: "Trebuchet MS", verdena, sans-serif, arial, georgia;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    a {
+        font-size: 22px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    a {
+        font-size: 22px;
+        padding: 10px;
+    }
+}
+
+a:hover {
+    color: black;
+    font-weight: bold;
+    font-size: 31px;
+}
+
+.menu_strona_glowna li a:hover {
+    color: rgb(230, 165, 26);
+    font-weight: bold;
+    font-size: 31px;
+    transform: scale(1.25);
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    .menu_strona_glowna li a:hover {
+        font-size: 22px;
+        transform: scale(1.05);
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .menu_strona_glowna li a:hover {
+        font-size: 22px;
+        transform: scale(1.05);
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+.podpis {
+    color: aliceblue;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    font-style: italic;
+    font-size: 20px;
+}
+
+.odstep {
+    color: #1B0DCD;
+}
+
+#obsada {
+    color: aliceblue;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    #obsada {
+        font-size: 11px;
+        line-height: 130%;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    #obsada {
+        font-size: 11px;
+        line-height: 130%;
+    }
+}
+
+#obsada li {
+    color: aliceblue;
+    font-size: 20px;
+    text-align: left;
+    font-family: "Trebuchet MS", verdena, sans-serif, arial, georgia;
+    padding: 2px;
+    line-height: 140%;
+    text-indent: 20px;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    #obsada li {
+        font-size: 18px;
+        line-height: 130%;
+        text-indent: 10px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    #obsada li {
+        font-size: 18px;
+        line-height: 130%;
+        text-indent: 10px;
+    }
+}
+
+#obsada li a {
+    color: aliceblue;
+    font-size: 20px;
+    text-align: left;
+    font-family: "Trebuchet MS", verdena, sans-serif, arial, georgia;
+    padding: 2px;
+    line-height: 140%;
+    text-indent: 20px;
+    display: inline;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    #obsada li a {
+        font-size: 18px;
+        line-height: 130%;
+        text-indent: 10px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    #obsada li a {
+        font-size: 18px;
+        line-height: 130%;
+        text-indent: 10px;
+    }
+}
+
+#obsada li a:hover {
+    color: #E30E12;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    #obsada li a:hover {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    #obsada li a:hover {
+        font-size: 19px;
+    }
+}
+
+#opis p {
+    color: aliceblue;
+    font-size: 19px;
+    text-align: justify;
+    font-family: "Trebuchet MS", verdena, sans-serif, arial, georgia;
+    padding: 2px;
+    line-height: 140%;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    #opis p {
+        font-size: 18px;
+        line-height: 130%;
+        margin-bottom: 2%;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    #opis p {
+        font-size: 18px;
+        line-height: 130%;
+        margin-bottom: 2%;
+    }
+}
+
+#opis p:first-letter {
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 40px;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    #opis p:first-letter {
+        font-size: 21px;
+        padding-left: 28px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    #opis p:first-letter {
+        font-size: 21px;
+        padding-left: 28px;
+    }
+}
+
+#opis p a {
+    color: aliceblue;
+    font-size: 20px;
+    text-align: left;
+    font-family: "Trebuchet MS", verdena, sans-serif, arial, georgia;
+    padding: 0px;
+    line-height: 140%;
+    text-indent: 20px;
+    display: inline;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    #opis p a {
+        font-size: 18px;
+        line-height: 130%;
+        text-indent: 10px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    #opis p a {
+        font-size: 18px;
+        line-height: 130%;
+        text-indent: 10px;
+    }
+}
+
+#opis p a:hover {
+    color: #E30E12;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    #opis p a:hover {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    #opis p a:hover {
+        font-size: 19px;
+    }
+}
+
+
+/* OBRAZKI DO STRONY AKTORKI */
+
+
+/* .opakowanie_obrazka
+        {
+            height: 300px;
+            width: 280px;
+            
+            text-align: center;
+            
+            margin-right: 35px;
+            margin-left: 35px;
+            margin-bottom: 20px;
+            float:left;
+        }
+         @media screen and (max-width: 1400px) and (min-width: 200px) {
+            .opakowanie_obrazka
+        {
+            height: 250px;
+            width: 220px;
+            margin-bottom: 0px;
+
+        }} */
+
+.opakowanie_obrazka p {
+    font-weight: bold;
+}
+
+.opakowanie_obrazka img:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.mystyle {
+    color: rgb(243, 181, 10);
+    font-size: 26px;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    .mystyle {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .mystyle {
+        font-size: 21px;
+    }
+}
+
+.normal {
+    color: white;
+    font-size: 23px;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    .normal {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .normal {
+        font-size: 19px;
+    }
+}
+
+#tresc #blok_obrazkow p {
+    text-align: center;
+    margin-top: -20px;
+}
+
+#tresc #blok_obrazkow {
+    margin-left: 130px;
+    margin-right: 100px;
+}
+
+#tresc #blok_obrazkow .opakowanie_obrazka a img {
+    height: 250px;
+    width: auto;
+    padding: 15px 10px;
+    border-radius: 40px;
+}
+
+
+/* OBRAZKI DO STRONY AKTORZY */
+
+#tresc .blok_obrazkow .opakowanie_obrazka_single a img {
+    height: 250px;
+    width: auto;
+    padding: 15px 10px;
+    border-radius: 40px;
+}
+
+.opakowanie_obrazka_single {
+    height: 320px;
+    width: 600px;
+    text-align: center;
+    margin-right: 35px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+}
+
+
+/* OBRAZKI DO STRONY FILMY */
+
+.opakowanie_obrazka_filmy {
+    height: 320px;
+    width: 240px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    float: left;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    .opakowanie_obrazka_filmy {
+        height: 280px;
+        width: 210px;
+        margin-right: 5px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .opakowanie_obrazka_filmy {
+        height: 320px;
+        width: 240px;
+        margin-right: 0px;
+        margin-left: 60px;
+        margin-bottom: 5px;
+    }
+}
+
+
+/* #tresc #blok_obrazkow_filmy p */
+
+.blok_obrazkow p {
+    text-align: center;
+    margin-top: -20px;
+    font-weight: bold;
+    line-height: 1.15;
+}
+
+
+/* .opakowanie_obrazka_filmy img
+        {
+            transition: width 1s, height 1s, transform 2s;
+        } */
+
+.opakowanie_obrazka_filmy img:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.mystyle {
+    color: rgb(243, 181, 10);
+    font-size: 26px;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    .mystyle {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .mystyle {
+        font-size: 21px;
+    }
+}
+
+.normal {
+    color: white;
+    font-size: 23px;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    .normal {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .normal {
+        font-size: 19px;
+    }
+}
+
+#tresc #blok_obrazkow_filmy {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#tresc #blok_obrazkow_filmy .opakowanie_obrazka_filmy a img {
+    height: 260px;
+    width: auto;
+    padding: 15px 10px;
+    border-radius: 30px;
+}
+
+
+/* STRONA OPIS FILMU */
+
+.obrazki_opis img {
+    height: 350px;
+    width: auto;
+    padding: 15px 10px;
+    border-radius: 30px;
+    border-style: none;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    .obrazki_opis img {
+        height: 290px;
+        width: auto;
+        padding: 15px 10px;
+        border-radius: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .obrazki_opis img {
+        height: 290px;
+        width: auto;
+        padding: 15px 10px;
+        border-radius: 30px;
+    }
+}
+
+
+/* STRONA GALERIA FILMU */
+
+.opakowanie_obrazka_galeria {
+    height: 240px;
+    width: 300px;
+    text-align: center;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    float: left;
+}
+
+#tresc .blok_obrazkow_galeria {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+#tresc .blok_obrazkow_galeria .opakowanie_obrazka_galeria img {
+    width: 250px;
+    height: auto;
+    padding: 0;
+}
+
+.opakowanie_obrazka_galeria img {
+    border-radius: 10px;
+}
+
+.myButton {
+    box-shadow: 0px 0px 0px -50px #9fb4f2;
+    background: linear-gradient(to bottom, #598de6 5%, #476e9e 100%);
+    background-color: #598de6;
+    border-radius: 20px;
+    border: 1px solid #4e6096;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: "Trebuchet MS", verdena, sans-serif, arial, georgia;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 14px;
+    text-decoration: none;
+    text-shadow: 0px 0px 0px #254bad;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    .myButton {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .myButton {
+        font-size: 18px;
+    }
+}
+
+.myButton:hover {
+    background: linear-gradient(to bottom, #476e9e 10%, #598de6 100%);
+    background-color: #476e9e;
+    border-color: lightsteelblue;
+    border-style: double;
+    font-size: 30px;
+    color: rgb(230, 165, 26);
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    .myButton:hover {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .myButton:hover {
+        font-size: 20px;
+    }
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.globus {
+    width: 100px;
+    height: 100px;
+    /* transform: scale(1.2); */
+}
+
+@media screen and (max-width: 1400px) and (min-width: 200px) {
+    .globus {
+        width: 70px;
+        height: 70px;
+        transform: scale(1.1);
+
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .globus {
+        width: 70px;
+        height: 70px;
+        transform: scale(1.1);
+
+    }
+}
+
+#toTopButton {
+    background-image: url("https://filmymarcin.cba.pl/strzalka.png");
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
